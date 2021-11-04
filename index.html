@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<head>
+<div class="generalinfo">
+  <h1 id="title">What To Do On Vacation?</h1>
+  <h3 id="description">When you go on vacation what do you like to do?</h3>
+  <form id="survey-form" class="">
+  <div class="generalinput">
+    <label id="name-label" for="name">Name:</label>
+    <span><input type="text" id="name" required value="Fred Smith"></span><br><br>
+    <label id="email-label" for="email">Email:</label>
+    <span><input type="email" id="email" required value="fsmith@yahoo.com"></span><br><br>
+    <label id="number-label" for="number">Number:</label>
+    <span id="number"></span><input type="number" id="number" min="1" max="5" value="12345"></span>
+  </div><!--generalinfo-->
+    <br><br>
+    <hr>
+    <!--dropdown selection in form-->
+  <div>
+    <h3><label id="dropdown-label" for="vacationitems">What You Would Like To Do?</label></h3>
+    <select id="dropdown" name="vacationitems">
+      <option value="swimming">Swimming/Diving</option>
+      <option value="whalewatching">Whale Watching</option>
+      <option value="hiking">Hiking</option>
+      <option value="snowsking">Snow Sking</option>
+      <option value="site seeing">Site Seeing</option>
+      <option value="fishing">Fishing</option>
+      <option value="reading">Reading a Good Book</option>
+    </select>
+  </div><!--dropdown-->
+    <br><br>
+    <hr>
+    <!--radio selection in form-->
+    <h3>Would you Recommend Taking a Vacation Every Year?</h3>
+    <div class="radio">
+        <input type="radio" id="yes" name="recommend" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" value="recommend">
+        <label for="no">No</label>
+        <input type="radio" id="maybe" value="recommend">
+        <label for="maybe">Maybe</label><br><br>
+    </div>
+    <hr>
+    <!--checkbox selection in form-->
+    <h3>Pick where you would like to go</h3>
+    <input type="checkbox" id="thebeach" name="thebeach" value="Beach">
+    <label for="thebeach">The Beach</label>
+    <input type="checkbox" id="acruise" name="acruise" value="A Cruise">
+    <label for="acruise">A Cruise</label>
+    <input type="checkbox" id="abigcity" name="abigcity" value="A Big City">
+    <label for="thebeach">A Big City</label>
+    <input type="checkbox" id="europe" name="Europe" value="Europe">
+    <label for="thebeach">Europe</label>
+    <input type="checkbox" id="australia" name="Australia" value="Australia">
+    <label for="australia">Australia</label>
+    <input type="checkbox" id="themountains" name="The Mountains" value="The Mountains">
+    <label for="themountains">The Mountains</label><br><br>  
+    <h3><label for="addcomment">Any additional comments?</label></h3>
+    <textarea id="addcomment" name="addcomment" rows="5" cols="50" placeholder="Enter your comments here..."></textarea>
+    <br><br>
+    <!--submit button in form-->
+    <input type="submit" value="Submit">
+  </form>
+    
+</div>
+  <!--<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>-->
+</body>
+</html>
+<!-- partial -->
+  
+

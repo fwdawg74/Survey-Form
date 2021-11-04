@@ -1,0 +1,32 @@
+
+@import "../../../CSS/reset.css";
+body {
+    text-align: center;
+    background-color: lightskyblue;
+  }
+
+  *, *:before, *:after {
+      box-sizing: border-box;
+  }
+
+#description {
+    text-size-adjust: 10px;
+}
+
+.generalinput {
+    font-weight: bold;
+}
+
+.radio {
+  align-self: center;
+  text-align: center;
+}
+
+input [type=checkbox] {
+  text-align: left;
+}
+
+input[type=submit] {
+  background-color: lightblue;
+}
+  
